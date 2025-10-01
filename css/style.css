@@ -3,7 +3,7 @@
 :root {
     --ribbon-color: #ED2939;
 
-    --dark-text-color: #36454F;
+    --dark-color: #36454F;
 
     --page-background-color: #F0F0F0;
 }
@@ -15,10 +15,38 @@
     box-sizing: border-box;
 }
 
+/* Utility Classes */
+.lato-small {
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.lato-large {
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+}
+
+/* General Styling */
 body {
 
 }
 
-/* Utility Classes */
-
-/* General Styling */
+.ribbon {
+    height: 35px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 3px solid var(--dark-color);
+    background-color: var(--ribbon-color);
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
