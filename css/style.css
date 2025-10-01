@@ -1,0 +1,24 @@
+
+/* Root Variables */
+:root {
+    --ribbon-color: #ED2939;
+
+    --dark-text-color: #36454F;
+
+    --page-background-color: #F0F0F0;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+/* Utility Classes */
+
+/* General Styling */
