@@ -6,6 +6,21 @@
     --dark-color: #36454F;
 
     --page-background-color: #F0F0F0;
+
+    /* Nav Linear Gradient Colors */
+    --nav-color-1: #F3FCE1;
+    --nav-color-2: #BDF7EF;
+    --nav-color-3: #B9DCF2;
+    --nav-color-4: #D6C8EE;
+    --nav-color-5: #F8C6DB;
+
+    /* Dropdown Menu Color */
+    --dropdown-color-1: #D37EEA;
+    --dropdown-color-2: #FF69B4;
+    --dropdown-color-3: #FF6A79;
+
+    /* Dropdown Menu Font Color */
+    --dropdown-text-color: #69FFB4;
 }
 
 /* Global Reset */
@@ -27,7 +42,7 @@
 .lato-large {
     font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 600;
     font-style: normal;
     font-size: 30px;
 }
@@ -49,4 +64,41 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+header {
+    background-image: linear-gradient(45deg, var(--nav-color-1), var(--nav-color-2), var(--nav-color-3), var(--nav-color-4), var(--nav-color-5));
+    border-bottom: 1px solid var(--dark-color);
+
+    
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border: 5px solid var(--dark-color);
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & li {
+        list-style: none;
+    }
+}
+
+.dropdown-content {
+    display: none;
+}
+
+a {
+    text-decoration: none;
 }
